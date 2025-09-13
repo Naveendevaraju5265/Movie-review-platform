@@ -1,4 +1,3 @@
-# Movie-review-platform
 # Movie Review Platform
 
 A full-stack web application for browsing, rating, and reviewing movies. Built with React frontend and Node.js backend using Express and SQL.
