@@ -76,7 +76,7 @@ A full-stack web application for browsing, rating, and reviewing movies. Built w
    ```
 
 4. **Database Setup**
-   The application uses SQLite database that is automatically created and initialized when the server starts.
+   The application uses SQL database that is automatically created and initialized when the server starts.
 
    - Database file: `server/movies.db`
    - Tables created automatically: `users`, `movies`, `reviews`
