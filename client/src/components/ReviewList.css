@@ -1,0 +1,162 @@
+.review-list {
+  background: white;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.review-list-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 30px;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.review-list-header h3 {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+}
+
+.review-stats {
+  font-size: 14px;
+  color: #666;
+}
+
+.reviews-container {
+  padding: 20px 30px;
+}
+
+.empty-reviews {
+  text-align: center;
+  padding: 60px 30px;
+  color: #666;
+}
+
+.empty-reviews h4 {
+  font-size: 1.2rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.empty-reviews p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 20px 30px;
+  background: #f8f9fa;
+  border-top: 1px solid #e0e0e0;
+}
+
+.pagination-button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 8px 12px;
+  border: 1px solid #ddd;
+  background: white;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  font-weight: 500;
+  color: #333;
+}
+
+.pagination-button:hover:not(:disabled) {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+  transform: translateY(-1px);
+}
+
+.pagination-button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  transform: none;
+}
+
+.pagination-button.active {
+  background: #007bff;
+  color: white;
+  border-color: #007bff;
+}
+
+.pagination-numbers {
+  display: flex;
+  gap: 5px;
+}
+
+.button-icon {
+  font-size: 12px;
+}
+
+.prev-button,
+.next-button {
+  font-weight: 600;
+}
+
+.number-button {
+  min-width: 40px;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .review-list-header {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+    text-align: center;
+  }
+  
+  .reviews-container {
+    padding: 15px 20px;
+  }
+  
+  .pagination {
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 15px 20px;
+  }
+  
+  .pagination-button {
+    padding: 6px 10px;
+    font-size: 13px;
+  }
+  
+  .number-button {
+    min-width: 35px;
+  }
+}
+
+@media (max-width: 480px) {
+  .review-list-header {
+    padding: 15px 20px;
+  }
+  
+  .reviews-container {
+    padding: 10px 15px;
+  }
+  
+  .pagination {
+    padding: 10px 15px;
+  }
+  
+  .pagination-button {
+    padding: 5px 8px;
+    font-size: 12px;
+  }
+  
+  .number-button {
+    min-width: 30px;
+  }
+}
